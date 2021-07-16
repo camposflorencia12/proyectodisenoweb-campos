@@ -1,0 +1,267 @@
+body{
+	background-color: $bg-color;
+	font-family: $fuente;
+	font-weight: 400;
+}
+.titulos{
+	color: $color-titulos;
+	text-align: center;
+	font-size: 1.5rem;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	@media all and (min-width: 992px){
+		background-position: center;
+	}
+}
+.texto{
+	color: $color-textos;
+	line-height: 2;
+	text-align: center;
+	font-size: 0.8em;
+}
+.contenedorNav{
+	border-bottom: 1px solid white;
+	background: rgb(91,27,163);
+	background: linear-gradient(90deg, rgba(91,27,163,0.7175070711878502) 0%, rgba(109,96,177,0.9359944661458334) 31%, rgba(131,105,189,1) 71%, rgba(54,28,128,0.5662465669861695) 98%); 
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 100;
+	@media all and (min-width: 992px){
+		max-height: 100px;
+	}
+	li{
+		list-style-type: none;
+		padding: 0 10px;		
+	}
+	a{
+		text-decoration: none;
+		color: white;
+		font-size: 1em;
+	}
+}
+.contenedorLogo{
+	img{
+		width: 34%;
+		margin-left: 20px;
+	}
+	@media all and (min-width: 992px){
+		width: 200px;
+		transform: translate(-50px, 50px);
+		img{
+			width: 60%;
+			margin-left: 85px;
+		}
+	}
+}
+/* Código Ok@mixin banners($imagen){
+	@if $imagen == home{
+		background-image: url("../media/horizonte.jpg")
+	}@else if $imagen == aboutme{
+		background-image: url("../media/flor-loto2.jpg")
+	}@else if $imagen == services{
+		background-image: url("../media/reiki-servicio.jpg")
+	}@else if $imagen == products{
+		background-image: url("../media/banner-producto.jpg")
+	}
+}
+@media all and (min-width: 992px){
+	.banner{
+		min-height: 350px;
+		height: 100vh;
+		background-size: cover;
+		margin-bottom: 40px;
+		background-position: center top;
+			p{
+					color: $color-textos;
+					font-size: 1.3em;
+			}
+		&.bHome{
+			@include banners('home');
+			p{
+				padding-top: 500px;
+			}
+		}
+		&.bAboutme{
+			@include banners('aboutme')
+			p{
+				width: ($ancho-text-banner/2.5);
+				margin-left: 30px;
+				line-height: 40px;
+				padding-top: 400px;
+			}
+		}
+		&.bService{
+			@include banners('services')
+			background-position: center;
+				p{
+				width: ($ancho-text-banner/1.25);
+				color: grey;
+				margin-left: 100px;
+				line-height: 40px;
+				padding-top: 200px;
+			}
+		}
+		&.bProduct{
+			@include banners('products')
+			background-position: center;
+			p{
+				width: ($ancho-text-banner/2.5);
+				margin-left: 30px;
+				line-height: 40px;
+				padding-top: 300px;
+			}
+		}
+	}
+}*/
+@mixin banners($imagen){
+	@if $imagen == home{
+		background-image: url("../media/horizonte.jpg")
+	}@else if $imagen == aboutme{
+		background-image: url("../media/flor-loto2.jpg")
+	}@else if $imagen == services{
+		background-image: url("../media/reiki-servicio.jpg")
+	}@else if $imagen == products{
+		background-image: url("../media/banner-producto.jpg")
+	}
+}
+@mixin bannersmobile($imagenes){
+	@if $imagenes == home{
+		background-image: url("../media/horizonte_mob.jpg")
+	}@else if $imagenes == aboutme{
+		background-image: url("../media/flor-loto2_mob.jpg")
+	}@else if $imagenes == services{
+		background-image: url("../media/reiki-servicio_mob.jpg")
+	}@else if $imagenes == products{
+		background-image: url("../media/banner-producto_mob.jpg")
+	}
+}
+.banner{
+	min-width: 360px;
+	height: 80vh;
+	background-size: cover;
+	background-position: center top;
+	margin-top: 100px;
+	margin-bottom: 50px;
+		p{
+			color: $color-textos;
+			font-size: 1em;
+			padding-top: 80px;
+		}
+	&.bHome{
+		@include bannersmobile('home');
+			p{
+				padding-top: 250px;
+			}
+	}
+	&.bAboutme{
+		@include bannersmobile('aboutme');
+			p{
+				padding-top: 250px;
+			}
+	}
+	&.bService{
+		@include bannersmobile('services');
+			p{
+				color: grey;
+			}
+	}
+	&.bProduct{
+		@include bannersmobile('products');
+	}
+	@media all and (min-width: 992px){
+		min-height: 350px;
+		height: 100vh;
+		margin: 0px 0px 40px 0px;
+		background-size: cover;
+		background-position: center-top;
+			p{
+				color: $color-textos;
+				font-size: 1.3em;
+			}
+		&.bHome{
+			@include banners('home');
+			max-height: 750px;
+			p{
+				padding-top: 500px;
+			}
+		}
+		&.bAboutme{
+			@include banners('aboutme')
+			p{
+				width: ($ancho-text-banner/2.5);
+				margin-left: 30px;
+				line-height: 40px;
+				padding-top: 400px;
+			}
+		}
+		&.bService{
+			@include banners('services')
+			background-position: center;
+			max-height: 789px;
+			p{
+				width: ($ancho-text-banner/1.25);
+				color: grey;
+				margin-left: 100px;
+				line-height: 40px;
+				padding-top: 200px;
+			}
+		}
+		&.bProduct{
+			@include banners('products')
+			background-position: center;
+			max-height: 720px;
+			p{
+				width: ($ancho-text-banner/2.5);
+				margin-left: 30px;
+				line-height: 40px;
+				padding-top: 300px;
+			}
+		}
+	}
+}
+#footer{
+	min-height: 150px;
+	border-top: 1px solid white;
+	margin-top: 40px;
+	ul{
+		list-style: none;
+	}
+	@media all and (min-width: 992px){
+		min-height: 500px;
+		border-top: 1px solid white;
+		margin-top: 40px;
+	}
+}
+.iconosRedes img{
+	width: 30px;
+	@media all and (min-width: 992px){
+		width: 60px;
+	}
+}
+.crownChakra{
+	width: 80px;
+	@media all and (min-width: 992px){
+		width: 256px;
+	}
+}
+.textFooter{
+	color: $color-textos;
+}
+.bgOrquidea{
+	background-image: url('../media/orquidea_footer1.png');
+	background-position: center;
+	background-size: cover;
+	height: 200px;
+	@media all and (min-width: 992px){
+		height: 500px;
+		background-position: center;
+	}
+}	
+#wsp{
+	position: fixed;
+	padding-bottom: 20px;
+	padding-right: 20px;
+	bottom: 0;
+	right: 0;
+}

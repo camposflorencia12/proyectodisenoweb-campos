@@ -1,0 +1,40 @@
+.imagenesProductos{
+	h3{
+		color: $color-titulos;
+		font-size: 1.5em;
+		padding: 30px 0px;
+		text-align: center;
+	}
+	img{
+		width: 300px;
+		margin-left: 30px;
+		&:hover{
+			transform: scale(1.1);
+			transition: all 500ms ease-in-out;
+		}
+		@media all and (min-width: 992px){
+			margin: 10px 0px;
+		}
+	}
+}
+.tituloTablas{
+	color: #FF6347;
+}
+.listaProducto{
+	list-style-position: inside;
+	color: white;
+}
+@media all and (min-width: 992px){
+	.imgProd{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+	}
+	.tableContent{
+		margin-top: 175px;
+		margin-left: 30px;
+	}
+	section{
+		text-align: center;
+	}
+}

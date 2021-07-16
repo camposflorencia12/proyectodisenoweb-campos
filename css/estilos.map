@@ -1,0 +1,16 @@
+{
+	"version": 3,
+	"file": "estilos.css",
+	"sources": [
+		"../scss/estilos.scss",
+		"../scss/_fuentes.scss",
+		"../scss/_variables.scss"
+	],
+	"sourcesContent": [
+		"@import \"fuentes\"; \r\n@import \"variables\"\r\n\r\n",
+		"",
+		"$color: red;\r\n$fuente: 'Roboto', sans-serif;"
+	],
+	"names": [],
+	"mappings": ""
+}

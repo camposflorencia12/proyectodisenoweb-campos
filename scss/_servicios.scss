@@ -1,0 +1,70 @@
+.tituloServicio{
+	padding-top: 50px;
+	@media all and (min-width: 992px){
+		padding-top: 10px
+	}
+}
+.textoServicio{
+	max-width: 500px;
+	margin: 1em 2em;
+	@media all and (min-width: 992px){
+		margin: auto;
+	}
+}
+.iframe{
+	box-sizing: border-box;
+	width: 300px;
+	margin-left: 30px;
+	@media all and (min-width: 992px){
+		margin-top: 1em;
+		margin-left: 397px;
+		min-width: 560px;
+	}
+}
+.descripcionServicio{
+	color: $color-textos;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	font-size: .7em;
+	@media all and (min-width: 992px){
+		font-size: 1em;
+	}
+}
+.bloqueSup, .bloqueInf{
+	margin: 20px 0px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.iconOne{
+	background-image: url('../media/third-eye-chakra-symbol.png');
+}
+.iconTwo{
+	background-image: url('../media/throat-chakra-symbol.png');
+}
+.iconThree{
+	background-image: url('../media/heart-chakra-symbol.png');
+}
+.iconFour{
+	background-image: url('../media/solar-plexus-chakra-symbol.png');
+}
+.iconFive{
+	background-image: url('../media/sacral-chakra-symbol.png');
+}
+.iconSix{
+	background-image: url('../media/root-chakra-symbol.png');
+}
+.allIcons{
+	background-position: center;
+	background-size: cover;
+	height: 140px;
+	width: 140px;
+	@media all and (min-width: 992px){
+		height: 150px;
+		width: 150px;
+	}
+}
