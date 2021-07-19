@@ -54,66 +54,6 @@ body{
 		}
 	}
 }
-/* Código Ok@mixin banners($imagen){
-	@if $imagen == home{
-		background-image: url("../media/horizonte.jpg")
-	}@else if $imagen == aboutme{
-		background-image: url("../media/flor-loto2.jpg")
-	}@else if $imagen == services{
-		background-image: url("../media/reiki-servicio.jpg")
-	}@else if $imagen == products{
-		background-image: url("../media/banner-producto.jpg")
-	}
-}
-@media all and (min-width: 992px){
-	.banner{
-		min-height: 350px;
-		height: 100vh;
-		background-size: cover;
-		margin-bottom: 40px;
-		background-position: center top;
-			p{
-					color: $color-textos;
-					font-size: 1.3em;
-			}
-		&.bHome{
-			@include banners('home');
-			p{
-				padding-top: 500px;
-			}
-		}
-		&.bAboutme{
-			@include banners('aboutme')
-			p{
-				width: ($ancho-text-banner/2.5);
-				margin-left: 30px;
-				line-height: 40px;
-				padding-top: 400px;
-			}
-		}
-		&.bService{
-			@include banners('services')
-			background-position: center;
-				p{
-				width: ($ancho-text-banner/1.25);
-				color: grey;
-				margin-left: 100px;
-				line-height: 40px;
-				padding-top: 200px;
-			}
-		}
-		&.bProduct{
-			@include banners('products')
-			background-position: center;
-			p{
-				width: ($ancho-text-banner/2.5);
-				margin-left: 30px;
-				line-height: 40px;
-				padding-top: 300px;
-			}
-		}
-	}
-}*/
 @mixin banners($imagen){
 	@if $imagen == home{
 		background-image: url("../media/horizonte.jpg")
