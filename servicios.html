@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css "href="css/estilos.css">
 	<link rel="stylesheet" href="css/animate.min.css" />
+	<link rel="stylesheet" href="css/aos.css">
 </head>
 <body>
 	<header>
@@ -40,7 +41,7 @@
 		</nav>
 	</header>
 	<div class="banner bService container-fluid text-center">
-		<div class="container wow animate__animated animate__slideInDown">
+		<div class="container wow animate__animated animate__slideInDown animate__slower">
 				<p>"...volver a la fuente para finalmente dejar de lado el egoísmo, los deseos mezquinos, la ira y la confusión." Mikao Usui
 				</p>
 		</div>
@@ -55,7 +56,7 @@
 		<iframe class="iframe" width="560" height="315" src="https://www.youtube.com/embed/Fhnw_oXS_nY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	</section>
 	<section>
-		<div class="descripcionServicio">
+		<div class="descripcionServicio" data-aos="zoom-in" data-aos-duration="3000">
 			<div class="bloqueSup">
 				<div>
 					<div class="allIcons iconOne"></div>
@@ -124,6 +125,10 @@
     <script>
     	new WOW().init();
     </script>
+    <script src="js/aos.js"></script>
+    <script>
+  		AOS.init();
+	</script>
     <script src="js/jquery-3.5.1.slim.min.js"></script>
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>

@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css "href="css/estilos.css">
 	<link rel="stylesheet" href="css/animate.min.css" />
+	<link rel="stylesheet" href="css/aos.css">
 </head>
 <body>
 	<header>
@@ -40,7 +41,7 @@
 		</nav>
 	</header>
 	<div class="banner bHome container-fluid text-center">
-		<div class="container wow animate__animated animate__fadeInLeft">
+		<div class="container wow animate__animated animate__fadeInLeft animate__slower">
 			<p>¿Sabes cuál es el compromiso con tu ALMA?
 			</p>
 		</div>
@@ -53,8 +54,8 @@
 					Contenedor de texto: software statistics teaching {color:#FF0000}technology{color} tips tool tools toread travel tutorial tutorials tv twitter typography ubuntu usability video videos visualization web web\ 2.0 web\ design webdev wiki windows wordpress work writing youtube. Contenedor de texto: software statistics teaching {color:#FF0000}technology{color} tips tool tools toread travel tutorial tutorials tv twitter typography ubuntu usability video videos visualization web web\ 2.0 web\ design webdev wiki windows wordpress work writing youtube
 				</p>
 			</div>
-			<div class="uno col-12 col-lg-6 order-1 order-lg-1"></div>
-			<div class="dos col-12 col-lg-6 order-3 order-lg-2"></div>
+			<div class="uno col-12 col-lg-6 order-1 order-lg-1" data-aos="fade-up-left" data-aos-duration="2000"></div>
+			<div class="dos col-12 col-lg-6 order-3 order-lg-2" data-aos="fade-up-right" data-aos-duration="2000"></div>
 			<div class="cinco col-12 col-lg-6 order-2 order-lg-3">
 				<h3 class="titulos">Energías</h3>
 				<p class="texto">
@@ -67,7 +68,7 @@
 				Contenedor de texto: software statistics teaching {color:#FF0000}technology{color} tips tool tools toread travel tutorial tutorials tv twitter typography ubuntu usability video videos visualization web web\ 2.0 web\ design webdev wiki windows wordpress work writing youtube. Contenedor de texto: software statistics teaching {color:#FF0000}technology{color} tips tool tools toread travel tutorial tutorials tv twitter typography ubuntu usability video videos visualization web web\ 2.0 web\ design webdev wiki windows wordpress work writing youtube
 				</p>
 			</div>
-			<div class="tres col-12 col-lg-6 order-5 order-lg-5"></div>
+			<div class="tres col-12 col-lg-6 order-5 order-lg-5" data-aos="fade-up-left" data-aos-duration="2000"></div>
 		</div>
 	</div>
 	<div id="footer">
@@ -108,6 +109,10 @@
     <script>
     	new WOW().init();
     </script>
+    <script src="js/aos.js"></script>
+    <script>
+  		AOS.init();
+	</script>
     <script src="js/jquery-3.5.1.slim.min.js"></script>
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>

@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css "href="css/estilos.css">
 	<link rel="stylesheet" href="css/animate.min.css" />
+	<link rel="stylesheet" href="css/aos.css">
 </head>
 <body>
 	<header>
@@ -42,7 +43,7 @@
 	<div class="contactForm container-fluid">
 		<div class="container">		
 			<div class="row mx-auto">		
-				<div class="pictureForm col-lg-6"></div>
+				<div class="pictureForm col-lg-6" data-aos="zoom-out-up" data-aos-duration="2000"></div>
 				<div class="contentForm col-lg-6">
 					<form class="formText" action="recibe.html" method="POST" enctype="multipart/form-data">
 					  	<div class="container">
@@ -125,6 +126,10 @@
     <script>
     	new WOW().init();
     </script>
+    <script src="js/aos.js"></script>
+    <script>
+  		AOS.init();
+	</script>
     <script src="js/jquery-3.5.1.slim.min.js"></script>
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>

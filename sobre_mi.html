@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css "href="css/estilos.css">
 	<link rel="stylesheet" href="css/animate.min.css" />
+	<link rel="stylesheet" href="css/aos.css">
 </head>
 <body>
 	<header>
@@ -40,7 +41,7 @@
 		</nav>
 	</header>
 	<div class="banner bAboutme container-fluid text-center">
-		<div class="container wow animate__animated animate__slideInDown">
+		<div class="container wow animate__animated animate__slideInDown animate__slower">
 				<p>"Viva la vida en su totalidad. Y viviendo en el mundo, no seas de él. Vive en el mundo como una flor de loto en el agua: vive en el agua, pero el agua no la toca". – Osho
 				</p>
 		</div>
@@ -121,6 +122,10 @@
     <script>
     	new WOW().init();
     </script>
+    <script src="js/aos.js"></script>
+    <script>
+  		AOS.init();
+	</script>
     <script src="js/jquery-3.5.1.slim.min.js"></script>
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
