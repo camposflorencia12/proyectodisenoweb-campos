@@ -213,8 +213,7 @@ body {
 
 .iframe {
   box-sizing: border-box;
-  width: 300px;
-  margin-left: 30px; }
+  width: 300px; }
   @media all and (min-width: 992px) {
     .iframe {
       margin-top: 1em;
@@ -238,6 +237,9 @@ body {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center; }
+  .bloqueSup p:hover, .bloqueInf p:hover {
+    color: #DDA0DD;
+    transform: scale(1.1); }
 
 .iconOne {
   background-image: url("../media/third-eye-chakra-symbol.png"); }
@@ -283,23 +285,38 @@ body {
     .imagenesProductos img {
       margin: 10px 0px; } }
 
-.tituloTablas {
-  color: #FF6347; }
-
-.listaProducto {
-  list-style-position: inside;
-  color: white; }
-
 @media all and (min-width: 992px) {
   .imgProd {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly; }
-  .tableContent {
-    margin-top: 175px;
-    margin-left: 30px; }
-  section {
+  .imagenesProductos {
     text-align: center; } }
+
+.prodUno, .prodDos, .prodTres, .prodCuatro, .prodCinco, .prodSeis {
+  background-position: center;
+  background-size: cover;
+  box-shadow: 1px 0px 7px 0px #fff;
+  max-width: 300px;
+  max-height: 300px; }
+  .prodUno.prodUno, .prodDos.prodUno, .prodTres.prodUno, .prodCuatro.prodUno, .prodCinco.prodUno, .prodSeis.prodUno {
+    background-image: url("../media/kit_limpieza.png"); }
+  .prodUno.prodDos, .prodDos.prodDos, .prodTres.prodDos, .prodCuatro.prodDos, .prodCinco.prodDos, .prodSeis.prodDos {
+    background-image: url("../media/piedras_dijes.jpg"); }
+  .prodUno.prodTres, .prodDos.prodTres, .prodTres.prodTres, .prodCuatro.prodTres, .prodCinco.prodTres, .prodSeis.prodTres {
+    background-image: url("../media/agua_florida.jpg"); }
+  .prodUno.prodCuatro, .prodDos.prodCuatro, .prodTres.prodCuatro, .prodCuatro.prodCuatro, .prodCinco.prodCuatro, .prodSeis.prodCuatro {
+    background-image: url("../media/sahumos.jpg"); }
+  .prodUno.prodCinco, .prodDos.prodCinco, .prodTres.prodCinco, .prodCuatro.prodCinco, .prodCinco.prodCinco, .prodSeis.prodCinco {
+    background-image: url("../media/velas_1.jpg"); }
+  .prodUno.prodSeis, .prodDos.prodSeis, .prodTres.prodSeis, .prodCuatro.prodSeis, .prodCinco.prodSeis, .prodSeis.prodSeis {
+    background-image: url("../media/sahumerios.jpg"); }
+
+.cuatro, .cinco, .seis {
+  min-height: 300px; }
+
+.descripcionProductos {
+  padding-top: 200px; }
 
 .contentForm {
   padding-top: 120px; }

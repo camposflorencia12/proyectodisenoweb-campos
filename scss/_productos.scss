@@ -17,24 +17,44 @@
 		}
 	}
 }
-.tituloTablas{
-	color: #FF6347;
-}
-.listaProducto{
-	list-style-position: inside;
-	color: white;
-}
 @media all and (min-width: 992px){
 	.imgProd{
 		display: flex;
 		flex-direction: row;
 		justify-content: space-evenly;
 	}
-	.tableContent{
-		margin-top: 175px;
-		margin-left: 30px;
-	}
-	section{
+	.imagenesProductos{
 		text-align: center;
 	}
+}
+.prodUno, .prodDos, .prodTres, .prodCuatro, .prodCinco, .prodSeis{
+	background-position: center;
+	background-size: cover;
+	box-shadow: 1px 0px 7px 0px #fff;
+	max-width: 300px;
+	max-height: 300px;
+	&.prodUno{
+		background-image: url("../media/kit_limpieza.png");
+	}
+	&.prodDos{
+		background-image: url("../media/piedras_dijes.jpg");
+	}
+	&.prodTres{
+		background-image: url("../media/agua_florida.jpg");
+	}
+	&.prodCuatro{
+		background-image: url("../media/sahumos.jpg");
+	}
+	&.prodCinco{
+		background-image: url("../media/velas_1.jpg");
+	}
+	&.prodSeis{
+		background-image: url("../media/sahumerios.jpg");
+	}
+}
+.cuatro, .cinco, .seis{
+	min-height: 300px
+}
+.descripcionProductos{
+	padding-top: 200px;
 }
