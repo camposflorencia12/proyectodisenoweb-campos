@@ -12,12 +12,30 @@ body{
 	@media all and (min-width: 992px){
 		background-position: center;
 	}
+	&.titulosProducto{
+		text-align: right;
+		text-transform: uppercase;
+	}
+	&.titulosProductoLft{
+		text-align: left;
+		text-transform: uppercase;
+	}
 }
 .texto{
 	color: $color-textos;
 	line-height: 2;
 	text-align: center;
 	font-size: 0.8em;
+	&.textoProducto{
+		text-align: right;
+		font-size: 1em;
+		line-height: 3;
+	}
+	&.textoProductoLft{
+		text-align: left;
+		font-size: 1em;
+		line-height: 3;
+	}
 }
 .contenedorNav{
 	border-bottom: 1px solid white;

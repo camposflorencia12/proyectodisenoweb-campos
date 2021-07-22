@@ -32,7 +32,8 @@
 	background-size: cover;
 	box-shadow: 1px 0px 7px 0px #fff;
 	max-width: 300px;
-	max-height: 300px;
+	height: 300px;
+	margin-bottom: 50px;
 	&.prodUno{
 		background-image: url("../media/kit_limpieza.png");
 	}
