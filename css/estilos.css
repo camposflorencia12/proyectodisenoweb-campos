@@ -13,26 +13,30 @@ body {
   @media all and (min-width: 992px) {
     .titulos {
       background-position: center; } }
-  .titulos.titulosProducto {
-    text-align: right;
-    text-transform: uppercase; }
-  .titulos.titulosProductoLft {
-    text-align: left;
-    text-transform: uppercase; }
+  @media all and (min-width: 992px) {
+    .titulos.titulosProducto {
+      text-align: right;
+      text-transform: uppercase; } }
+  @media all and (min-width: 992px) {
+    .titulos.titulosProductoLft {
+      text-align: left;
+      text-transform: uppercase; } }
 
 .texto {
   color: white;
   line-height: 2;
   text-align: center;
   font-size: 0.8em; }
-  .texto.textoProducto {
-    text-align: right;
-    font-size: 1em;
-    line-height: 3; }
-  .texto.textoProductoLft {
-    text-align: left;
-    font-size: 1em;
-    line-height: 3; }
+  @media all and (min-width: 992px) {
+    .texto.textoProducto {
+      text-align: right;
+      font-size: 1em;
+      line-height: 3; } }
+  @media all and (min-width: 992px) {
+    .texto.textoProductoLft {
+      text-align: left;
+      font-size: 1em;
+      line-height: 3; } }
 
 .contenedorNav {
   border-bottom: 1px solid white;
@@ -83,14 +87,18 @@ body {
   .banner.bAboutme {
     background-image: url("../media/flor-loto2_mob.jpg"); }
     .banner.bAboutme p {
-      padding-top: 250px; }
+      padding-top: 250px;
+      text-shadow: 2px 2px 4px #B130CE; }
   .banner.bService {
     background-image: url("../media/reiki-servicio_mob.jpg"); }
     .banner.bService p {
-      color: grey; }
+      color: grey;
+      text-shadow: 2px 2px 4px #0466CE; }
   .banner.bProduct {
     background-image: url("../media/banner-producto_mob.jpg"); }
-  @media all and (min-width: 992px) {
+    .banner.bProduct p {
+      text-shadow: 2px 2px 4px #BFDB21; }
+  @media all and (min-width: 650px) {
     .banner {
       min-height: 350px;
       height: 100vh;
@@ -157,7 +165,8 @@ body {
       width: 256px; } }
 
 .textFooter {
-  color: white; }
+  color: white;
+  font-style: italic; }
 
 .bgOrquidea {
   background-image: url("../media/orquidea_footer1.png");

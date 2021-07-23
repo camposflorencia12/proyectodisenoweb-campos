@@ -13,12 +13,16 @@ body{
 		background-position: center;
 	}
 	&.titulosProducto{
-		text-align: right;
-		text-transform: uppercase;
+		@media all and (min-width: 992px){
+			text-align: right;
+			text-transform: uppercase;
+		}
 	}
 	&.titulosProductoLft{
-		text-align: left;
-		text-transform: uppercase;
+		@media all and (min-width: 992px){
+			text-align: left;
+			text-transform: uppercase;
+		}
 	}
 }
 .texto{
@@ -27,14 +31,18 @@ body{
 	text-align: center;
 	font-size: 0.8em;
 	&.textoProducto{
-		text-align: right;
-		font-size: 1em;
-		line-height: 3;
+		@media all and (min-width: 992px){
+			text-align: right;
+			font-size: 1em;
+			line-height: 3;
+		}
 	}
 	&.textoProductoLft{
-		text-align: left;
-		font-size: 1em;
-		line-height: 3;
+		@media all and (min-width: 992px){
+			text-align: left;
+			font-size: 1em;
+			line-height: 3;
+		}
 	}
 }
 .contenedorNav{
@@ -116,18 +124,23 @@ body{
 		@include bannersmobile('aboutme');
 			p{
 				padding-top: 250px;
+				text-shadow: 2px 2px 4px #B130CE;
 			}
 	}
 	&.bService{
 		@include bannersmobile('services');
 			p{
 				color: grey;
+				text-shadow: 2px 2px 4px #0466CE;
 			}
 	}
 	&.bProduct{
 		@include bannersmobile('products');
+			p{
+				text-shadow: 2px 2px 4px #BFDB21;
+			}
 	}
-	@media all and (min-width: 992px){
+	@media all and (min-width: 650px){
 		min-height: 350px;
 		height: 100vh;
 		margin: 0px 0px 40px 0px;
@@ -205,6 +218,7 @@ body{
 }
 .textFooter{
 	color: $color-textos;
+	font-style: italic;
 }
 .bgOrquidea{
 	background-image: url('../media/orquidea_footer1.png');
