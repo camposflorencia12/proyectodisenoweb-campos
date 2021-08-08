@@ -37,7 +37,7 @@ body {
         width: 40%;
         margin: 20px 0px;
         padding: 50px 60px;
-        line-height: 3; } }
+        line-height: 2.5; } }
   @media all and (min-width: 992px) {
     .texto.textoServicio {
       margin: 1em 4em;
