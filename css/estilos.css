@@ -27,8 +27,23 @@ body {
   line-height: 2;
   text-align: center;
   font-size: 0.8em; }
+  .texto.textoSobreMi {
+    min-width: 300px;
+    width: 40%;
+    margin: 10px auto;
+    font-size: 1em; }
+    @media all and (min-width: 992px) {
+      .texto.textoSobreMi {
+        width: 40%;
+        margin: 20px 0px;
+        padding: 50px 60px;
+        line-height: 3; } }
   @media all and (min-width: 992px) {
-    .texto.textoProducto {
+    .texto.textoServicio {
+      margin: 1em 4em;
+      font-size: 1em; } }
+  @media all and (min-width: 992px) {
+    .texto.textoProductoRgt {
       text-align: right;
       font-size: 1em;
       line-height: 3; } }
@@ -116,10 +131,10 @@ body {
       .banner.bAboutme {
         background-image: url("../media/flor-loto2.jpg"); }
         .banner.bAboutme p {
-          width: 40%;
+          width: 50%;
           margin-left: 30px;
           line-height: 40px;
-          padding-top: 400px; }
+          padding-top: 200px; }
       .banner.bService {
         background-image: url("../media/reiki-servicio.jpg");
         background-position: center;
@@ -142,15 +157,15 @@ body {
 
 #footer {
   min-height: 150px;
+  max-height: 200px;
   border-top: 1px solid white;
   margin-top: 40px; }
   #footer ul {
-    list-style: none; }
+    list-style: none;
+    padding-right: 40px; }
   @media all and (min-width: 992px) {
     #footer {
-      min-height: 500px;
-      border-top: 1px solid white;
-      margin-top: 40px; } }
+      min-height: 500px; } }
 
 .iconosRedes img {
   width: 30px; }
@@ -172,11 +187,13 @@ body {
   background-image: url("../media/orquidea_footer1.png");
   background-position: center;
   background-size: cover;
-  height: 200px; }
+  height: 200px;
+  max-width: 330px; }
   @media all and (min-width: 992px) {
     .bgOrquidea {
       height: 500px;
-      background-position: center; } }
+      background-position: center;
+      max-width: 740px; } }
 
 #wsp {
   position: fixed;
@@ -185,20 +202,17 @@ body {
   bottom: 0;
   right: 0; }
 
-.uno, .dos, .tres {
+.fotoMndoEsp, .fotoEnerg, .fotoSanacion {
   background-position: right;
   background-size: cover;
   box-shadow: 1px 0px 7px 0px #fff;
   min-height: 350px; }
-  .uno.uno, .dos.uno, .tres.uno {
+  .fotoMndoEsp.fotoMndoEsp, .fotoEnerg.fotoMndoEsp, .fotoSanacion.fotoMndoEsp {
     background-image: url("../media/mundo_espiritual.jpg"); }
-  .uno.dos, .dos.dos, .tres.dos {
+  .fotoMndoEsp.fotoEnerg, .fotoEnerg.fotoEnerg, .fotoSanacion.fotoEnerg {
     background-image: url("../media/energia_espiritual.jpg"); }
-  .uno.tres, .dos.tres, .tres.tres {
+  .fotoMndoEsp.fotoSanacion, .fotoEnerg.fotoSanacion, .fotoSanacion.fotoSanacion {
     background-image: url("../media/sanacion.jpg"); }
-
-.cuatro, .cinco, .seis {
-  min-height: 350px; }
 
 .miFoto {
   min-width: 150px;
@@ -211,24 +225,11 @@ body {
       width: 30%;
       margin: 20px 0px 20px 300px; } }
 
-.textoSobreMi {
-  min-width: 300px;
-  width: 40%;
-  margin: 10px auto; }
-  @media all and (min-width: 992px) {
-    .textoSobreMi {
-      width: 40%;
-      margin: 20px 0px;
-      padding: 50px 60px; } }
-
 .tituloServicio {
   padding-top: 50px; }
   @media all and (min-width: 992px) {
     .tituloServicio {
       padding-top: 10px; } }
-
-.textoServicio {
-  margin: 1em 4em; }
 
 .iframe {
   box-sizing: border-box;
@@ -288,28 +289,21 @@ body {
       height: 150px;
       width: 150px; } }
 
-.imagenesProductos h3 {
-  color: #DA70D6;
-  font-size: 1.5em;
-  padding: 30px 0px;
-  text-align: center; }
-
-.imagenesProductos img {
-  width: 300px; }
-  .imagenesProductos img:hover {
-    transform: scale(1.1);
-    transition: all 500ms ease-in-out; }
-  @media all and (min-width: 992px) {
-    .imagenesProductos img {
-      margin: 10px 0px; } }
-
-@media all and (min-width: 992px) {
-  .imgProd {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly; }
-  .imagenesProductos {
-    text-align: center; } }
+.imagenesProductos {
+  padding-bottom: 80px; }
+  .imagenesProductos h3 {
+    color: #DA70D6;
+    font-size: 1.5em;
+    padding-top: 30px;
+    text-align: center; }
+  .imagenesProductos img {
+    width: 300px; }
+    .imagenesProductos img:hover {
+      transform: scale(1.1);
+      transition: all 500ms ease-in-out; }
+    @media all and (min-width: 992px) {
+      .imagenesProductos img {
+        margin: 10px 0px; } }
 
 .prodUno, .prodDos, .prodTres, .prodCuatro, .prodCinco, .prodSeis {
   background-position: center;
@@ -331,17 +325,14 @@ body {
   .prodUno.prodSeis, .prodDos.prodSeis, .prodTres.prodSeis, .prodCuatro.prodSeis, .prodCinco.prodSeis, .prodSeis.prodSeis {
     background-image: url("../media/sahumerios.jpg"); }
 
-.cuatro, .cinco, .seis {
-  min-height: 300px; }
-
 .descripcionProductos {
-  padding-top: 200px; }
+  padding-top: 60px; }
 
 .contentForm {
   padding-top: 120px; }
   @media all and (min-width: 992px) {
     .contentForm {
-      margin-top: 120px;
+      margin-top: 110px;
       padding-top: 0px; } }
 
 .formText {
@@ -374,13 +365,13 @@ body {
 
 @media all and (min-width: 992px) {
   .pictureForm {
-    min-height: 450px;
+    min-height: 500px;
     background-image: url("../media/chakras_all.png");
     background-position: center;
     background-size: cover;
-    margin-top: 150px;
+    margin-top: 125px;
     padding-top: 0px;
-    height: 60vh; }
+    height: 65vh; }
   .textDestiny h4 {
     color: purple;
     font-size: 700; } }

@@ -1,18 +1,15 @@
-.uno, .dos, .tres{
+.fotoMndoEsp, .fotoEnerg, .fotoSanacion{
 	background-position: right;
 	background-size: cover;
 	box-shadow: 1px 0px 7px 0px #fff;
 	min-height: 350px;
-	&.uno{
+	&.fotoMndoEsp{
 		background-image: url("../media/mundo_espiritual.jpg");
 	}
-	&.dos{
+	&.fotoEnerg{
 		background-image: url("../media/energia_espiritual.jpg");
 	}
-	&.tres{
+	&.fotoSanacion{
 		background-image: url("../media/sanacion.jpg");
 	}
-}
-.cuatro, .cinco, .seis{
-	min-height: 350px
 }

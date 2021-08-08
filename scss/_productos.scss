@@ -1,8 +1,9 @@
 .imagenesProductos{
+	padding-bottom: 80px;
 	h3{
 		color: $color-titulos;
 		font-size: 1.5em;
-		padding: 30px 0px;
+		padding-top: 30px;
 		text-align: center;
 	}
 	img{
@@ -14,16 +15,6 @@
 		@media all and (min-width: 992px){
 			margin: 10px 0px;
 		}
-	}
-}
-@media all and (min-width: 992px){
-	.imgProd{
-		display: flex;
-		flex-direction: row;
-		justify-content: space-evenly;
-	}
-	.imagenesProductos{
-		text-align: center;
 	}
 }
 .prodUno, .prodDos, .prodTres, .prodCuatro, .prodCinco, .prodSeis{
@@ -52,9 +43,6 @@
 		background-image: url("../media/sahumerios.jpg");
 	}
 }
-.cuatro, .cinco, .seis{
-	min-height: 300px
-}
 .descripcionProductos{
-	padding-top: 200px;
+	padding-top: 60px;
 }
